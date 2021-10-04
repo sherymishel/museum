@@ -1,0 +1,461 @@
+@media screen and (min-width: 1020px) and (max-width: 1499px) {
+  h2 {
+    font-size: 50px;
+  }
+  header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #030303;
+    color: white;
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 28px;
+  }
+  header .logo img {
+    height: 29px;
+    margin-right: 25px;
+  }
+  header ul {
+    display: none;
+  }
+  .welcome {
+    padding: 0 2%;
+    background-color: #030303;
+    color: white;
+    margin: 0;
+    background-image: url("img/monalisa.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 95%;
+  }
+  .welcome .mona {
+    display: none;
+  }
+  .welcome .btn h2 {
+    padding-top: 50px;
+    margin-bottom: 25px;
+  }
+  .welcome .btn p {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  .welcome .btn button {
+    margin-left: -10px;
+    width: 35%;
+    margin: 160px 0;
+    background-color: #710707;
+    padding: 25px 60px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+  }
+  .welcome .btn .nav {
+    margin-left: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+    min-width: 200px;
+    margin-top: -50px;
+    padding: 20px;
+    background-color: #030303;
+  }
+  .welcome .btn .nav p {
+    font-size: 15px;
+  }
+  .welcome .btn .nav .square {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .welcome .btn .nav .square img {
+    width: 14px;
+    height: 14px;
+    margin: 15px;
+  }
+  .welcome .btn .nav .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .welcome .btn .nav .arrow img {
+    margin: 20px;
+    width: 30px;
+    height: 8px;
+  }
+  .virtual_tour {
+    padding: 8% 10%;
+  }
+  .virtual_tour h2 {
+    color: #9D8665;
+    margin-bottom: 20px;
+  }
+  .virtual_tour hr {
+    background-color: #710707;
+    height: 2px;
+  }
+  .virtual_tour .cards {
+    margin-top: 50px;
+    displaY: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .virtual_tour .cards .card {
+    margin-bottom: 75px;
+  }
+  .virtual_tour .cards .card hr {
+    width: 70%;
+  }
+  .virtual_tour .cards .card img {
+    width: 330px;
+  }
+  .virtual_tour .cards .card h3 {
+    font-size: 28px;
+    line-height: 31px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .virtual_tour .cards .card p {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .virtual_tour .cards .card small {
+    text-transform: capitalize;
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .explore {
+    padding: 5% 2%;
+    letter-spacing: 0;
+    background-color: black;
+    color: white;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .explore img {
+    margin-top: 50px;
+  }
+  .explore article {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    margin-right: 50px;
+    font-weight: 300;
+  }
+  .explore article hr {
+    background: #710707;
+    width: 68%;
+    height: 3px;
+    border: none;
+    margin-bottom: 50px;
+  }
+  .explore article span {
+    color: #BD9F75;
+  }
+  .video {
+    display: -ms-grid;
+    display: grid;
+    padding: 5% 2%;
+    grid-auto-columns: 1fr 1fr;
+        grid-template-areas: "h2 small" "main main" "records records" "vid-nav vid-nav";
+  }
+  .video h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h2;
+    color: #9D8665;
+    line-height: 39px;
+  }
+  .video p {
+    display: none;
+  }
+  .video .main-video {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    width: 96%;
+    height: 70%;
+    margin: 75px auto 45px;
+  }
+  .video .records {
+    margin-top: -10%;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: records;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .video .records video {
+    width: 30%;
+  }
+  .vid-nav {
+    margin: 0 auto;
+    width: 200px;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: vid-nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .buy {
+    margin-bottom: 50px;
+    padding: 5% 2%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "h2 h2 h2" "hr hr hr" "img ticket amount";
+  }
+  .buy h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h2;
+    color: #9D8665;
+    margin-bottom: 25px;
+  }
+  .buy hr {
+    border: none;
+    background-color: #710707;
+    height: 2px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: hr;
+    margin-bottom: 75px;
+  }
+  .buy img {
+    width: 110%;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  .buy b {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 700;
+  }
+  .buy .ticket-type {
+    display: none;
+  }
+  .buy .amount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: amount;
+  }
+  .buy .amount button {
+    border: none;
+    outline: none;
+  }
+  .buy .amount_age p {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .buy .amount_age .counter {
+    margin-bottom: 10px;
+    border: 3px black solid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 150px;
+  }
+  .buy .amount_age .counter_btn {
+    background-color: white;
+    font-size: 22px;
+    padding: 10px;
+    color: black;
+    padding: 0;
+  }
+  .buy .amount .buy_btn {
+    margin-top: 70px;
+    background-color: black;
+    color: white;
+    padding: 0;
+    font-size: 22px;
+    width: 68%;
+    height: 60px;
+  }
+  .full {
+    width: 100%;
+  }
+  .contacts {
+    padding: 5% 2%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas: "h2 h2" "hr hr" "p img";
+  }
+  .contacts h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: h2;
+    margin-bottom: 25px;
+  }
+  .contacts hr {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: hr;
+    background-color: #710707;
+    border: none;
+    height: 3px;
+    margin-bottom: 75px;
+  }
+  .contacts p {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: p;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .contacts p b {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .contacts img {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: img;
+    width: 100%;
+  }
+  footer {
+    background-color: black;
+    color: white;
+  }
+  footer hr {
+    background-color: #666666;
+  }
+  footer .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5% 2%;
+  }
+  footer .top .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5%;
+  }
+  footer .top .logo h5 {
+    font-size: 28px;
+  }
+  footer .top .logo img {
+    margin-right: 26px;
+    width: 49px;
+  }
+  footer .top ul {
+    margin-right: 7%;
+  }
+  footer .top ul li {
+    line-height: 26px;
+    font-size: 22px;
+    font-weight: 200;
+  }
+  footer .top .social {
+    margin-left: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 30%;
+  }
+  footer .top .social div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: white 2px solid;
+    border-radius: 50%;
+  }
+  footer .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 5% 2%;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 200;
+  }
+}
+/*# sourceMappingURL=1024px.css.map */

@@ -1,4 +1,4 @@
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1020px) and (max-width: 1499px) {
     
     h2 {
         font-size: 50px;
@@ -31,6 +31,9 @@
             background-repeat: no-repeat;
             background-size: 70%;
             background-position-x: 95%;
+           .mona {
+                display: none;
+            }
             .btn {
                 h2 {
                     padding-top: 50px;                margin-bottom: 25px;
@@ -44,7 +47,7 @@
                 button {
                     margin-left: -10px;
                     width: 35%;
-                    margin: 160px 0 20%;
+                    margin: 160px 0;
                     background-color: #710707;
                     padding: 25px 60px;
                     color: white;
@@ -53,16 +56,17 @@
                     border: none;
                 }
                 .nav {
-                    position: absolute;
-                    top: 82%;
-                    right: 0%;
+                    // position: absolute;
+                    // top: 82%;
+                    // right: 0%;
+                    margin-left: 40%;
                     align-items: center;
                     display: flex;
                     justify-content: space-between;
-                     width: 550px;
+                     width: 50%;
                      min-width: 200px;
-                     margin-top: 0;
-                    padding: 0 20px;
+                     margin-top: -50px;
+                    padding: 20px;
                     background-color: #030303;
                     p {
                         font-size: 15px;
