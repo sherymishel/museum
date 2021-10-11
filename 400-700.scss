@@ -1,7 +1,6 @@
 
 @media screen and (min-width: 425px) and (max-width: 1019px) {
     
-    
     .full {
         width: 100%;
     }
@@ -67,7 +66,7 @@
                     .square {
                         display: flex;
                         justify-content: space-between;
-                        img {
+                        .sq {
                         width: 12px;
                         height: 12px;
                         margin: 15px
@@ -742,5 +741,6 @@
            }
        
            }
+           
 }
 

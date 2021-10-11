@@ -22,7 +22,7 @@
     display: flex;
     font-size: 28px;
   }
-  header .logo img {
+  header .logo .sq {
     height: 29px;
     margin-right: 25px;
   }
@@ -456,6 +456,9 @@
     font-size: 22px;
     line-height: 22px;
     font-weight: 200;
+  }
+  .booking {
+    top: 620%;
   }
 }
 /*# sourceMappingURL=1024px.css.map */

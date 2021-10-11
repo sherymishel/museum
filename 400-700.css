@@ -80,7 +80,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .welcome .btn .nav .square img {
+  .welcome .btn .nav .square .sq {
     width: 12px;
     height: 12px;
     margin: 15px;

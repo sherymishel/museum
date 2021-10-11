@@ -52,7 +52,7 @@ ul {
     display: flex;
     font-size: 28px;
   }
-  header .logo img {
+  header .logo .sq {
     height: 29px;
     margin-right: 25px;
   }
@@ -225,7 +225,6 @@ ul {
   .video h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: h2;
     color: #9D8665;
     line-height: 39px;
@@ -285,7 +284,6 @@ ul {
   .buy h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: h2;
     color: #9D8665;
     margin-bottom: 25px;
@@ -377,7 +375,6 @@ ul {
   .contacts h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: h2;
     margin-bottom: 25px;
   }
@@ -487,6 +484,9 @@ ul {
     line-height: 22px;
     font-weight: 200;
   }
+  .booking {
+    top: 620%;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -533,6 +533,9 @@ ul {
     font-weight: 200;
     line-height: 26px;
     list-style: none;
+  }
+  header .buger-menu {
+    display: none;
   }
   .welcome {
     padding-left: 10%;
@@ -598,7 +601,7 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .welcome .btn .nav .square img {
+  .welcome .btn .nav .square .sq {
     width: 14px;
     height: 14px;
     margin: 15px;
@@ -704,7 +707,6 @@ ul {
   .video h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: h2;
     color: #9D8665;
     line-height: 39px;
@@ -767,7 +769,6 @@ ul {
   .buy h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: h2;
     color: #9D8665;
     margin-bottom: 25px;
@@ -870,7 +871,6 @@ ul {
   .contacts h2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: h2;
     margin-bottom: 25px;
   }
@@ -977,6 +977,9 @@ ul {
     line-height: 22px;
     font-weight: 200;
   }
+  .booking {
+    top: 700%;
+  }
 }
 
 @media screen and (min-width: 425px) and (max-width: 1019px) {
@@ -1061,7 +1064,7 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .welcome .btn .nav .square img {
+  .welcome .btn .nav .square .sq {
     width: 12px;
     height: 12px;
     margin: 15px;
@@ -1828,5 +1831,106 @@ ul {
   footer .bottom p:nth-child(2) {
     display: none;
   }
+}
+
+.counter {
+  margin-bottom: 10px;
+  border: 3px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 150px;
+}
+
+.counter_btn {
+  background-color: white;
+  font-size: 22px;
+  padding: 10px;
+  color: black;
+  padding: 0;
+}
+
+.sq-big {
+  border: 5px solid pink;
+  width: 20px;
+}
+
+.ul-cover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.747);
+  width: 80%;
+  padding-top: 900px;
+  padding-bottom: 300px;
+  padding-left: 40px;
+}
+
+.ul-cover li {
+  line-height: 50px;
+}
+
+video {
+  position: relative;
+}
+
+.play {
+  background-color: rgba(0, 0, 0, 0.103);
+  color: white;
+  border: none;
+}
+
+.booking {
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  line-height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 0.2fr 1fr;
+      grid-template-rows: 0.2fr 1fr;
+      grid-template-areas: 'h2 close' 'left right';
+  padding: 5% 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking .close {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: close;
+  font-size: 70px;
+  border: none;
+  background-color: white;
+}
+
+.booking .close:hover {
+  cursor: pointer;
+}
+
+.booking h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h2;
+  line-height: 70px;
+}
+
+.booking_left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: left;
+  margin-right: 5%;
+}
+
+.booking_right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: right;
 }
 /*# sourceMappingURL=style.css.map */

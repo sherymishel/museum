@@ -13,7 +13,7 @@
             <img src="img/logo.svg" alt="">
             <h5>louvre</h5>
         </div>
-        <ul>
+        <ul id="navigation">
             <li>visiting</li>
             <li>explore</li>
             <li>video</li>
@@ -21,6 +21,10 @@
             <li>tickets</li>
             <li>contacts</li>
         </ul>
+         <div class="buger-menu">
+
+            <img src="img/burger.svg" alt="">
+        </div> 
     </header>
       <main>
         <div class="welcome">
@@ -30,17 +34,17 @@
                 <img class="mona" src="img/monalisa.png" alt="">
                 <button>Discover the Louvre</button>
                 <div class="nav">
-                    <p>01 | 05</p>
+                    <p>0<span class="slide">1</span> | 05</p>
                     <div class="square">
-                        <img src="img/square.svg" alt="">
-                    <img src="img/square.svg" alt="">
-                    <img src="img/square.svg" alt="">
-                    <img src="img/square.svg" alt="">
-                    <img src="img/square.svg" alt="">
+                    <img class="sq" src="img/square.svg" alt="">
+                    <img class="sq" src="img/square.svg" alt="">
+                    <img class="sq" src="img/square.svg" alt="">
+                    <img class="sq" src="img/square.svg" alt="">
+                    <img class="sq" src="img/square.svg" alt="">
                     </div>
                     <div class="arrow">
-                    <img src="img/arrow left.svg" alt="">
-                    <img src="img/arrow right.svg" alt="">
+                    <img class="ar-left" src="img/arrow left.svg" alt="">
+                    <img class="ar-right" src="img/arrow right.svg" alt="">
                 </div>
                 </div>
             </div>
@@ -107,28 +111,29 @@
     <div class="video">
         <h2>video journey</h2>
         <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
-        <video class="main-video" width="400" height="300" controls="controls" poster="img/vids/y1.png">
-            <source src="https://www.youtube.com/watch?v=zp1BXPX8jcU&ab_channel=Mus%C3%A9eduLouvre">
+            <video class="main-video" width="400" height="300" controls="controls" poster="img/vids/y1.png">
+            <source src="img/Welcome.mp4">
             </video>
+            <button class="play">play</button>
             <div class="records">
-                <video width="400" height="300" controls="controls" poster="img/vids/y2.png">
-                    <source src="https://www.youtube.com/watch?v=zp1BXPX8jcU&ab_channel=Mus%C3%A9eduLouvre">
+                    <video width="400" height="300" poster="img/vids/y2.png">
+                    <source src="img/Welcome.mp4">
                     </video>
-                    <video width="400" height="300" controls="controls" poster="img/vids/y3.png">
-                        <source src="https://www.youtube.com/watch?v=zp1BXPX8jcU&ab_channel=Mus%C3%A9eduLouvre">
+                    <video width="400" height="300" poster="img/vids/y3.png">
+                        <source src="img/Welcome.mp4">
                         </video>
-                        <video width="400" height="300" controls="controls" poster="img/vids/y4.png">
-                            <source src="https://www.youtube.com/watch?v=zp1BXPX8jcU&ab_channel=Mus%C3%A9eduLouvre">
-                            </video>   
+                        <video width="400" height="300"  poster="img/vids/y4.png">
+                            <source src="img/Welcome.mp4">
+                            </video>  
             </div>
         <div class="vid-nav">
-            <img src="img/Vector (Stroke).svg" alt="">
-            <img src="img/Ellipse 4.svg" alt="">
-            <img src="img/Ellipse 5.svg" alt="">
-            <img src="img/Ellipse 5.svg" alt="">
-            <img src="img/Ellipse 5.svg" alt="">
-            <img src="img/Ellipse 5.svg" alt="">
-            <img src="img/Vector (Stroke) (1).svg" alt="">
+            <img class="stroke-left" src="img/Vector (Stroke).svg" alt="">
+            <span class="bullet"><img class="bullet-dark" src="img/Ellipse 4.svg" alt=""></span>
+            <span class="bullet"><img class="bullet-light" src="img/Ellipse 5.svg" alt=""></span>
+            <span class="bullet"><img class="bullet-light" src="img/Ellipse 5.svg" alt=""></span>
+            <span class="bullet"><img class="bullet-light" src="img/Ellipse 5.svg" alt=""></span>
+            <span class="bullet"><img class="bullet-light" src="img/Ellipse 5.svg" alt=""></span>
+            <img class="stroke-right" src="img/Vector (Stroke) (1).svg" alt="">
         </div>
     </div>
     <div class="buy">
@@ -136,12 +141,12 @@
         <hr> 
         <img src="img/b1.png" alt="">
         <div class="ticket-type">
-            <b>Ticket Type</b>
+            <!-- <b>Ticket Type</b>
             <ul>
-                <li> <input type="radio" checked> Permanent exhibition</li>
-                <li> <input type="radio"> Temporary exhibition</li>
-                <li> <input type="radio"> Combined Admission </li>
-            </ul>
+                <li> <input type="radio" name="type" checked> Permanent Exhibition</li>
+                <li> <input type="radio" name="type"> Temporary Exhibition</li>
+                <li> <input type="radio" name="type"> Combined Admission </li>
+            </ul> -->
         </div>
         <div class="amount">
             <b> Amount </b><br>
@@ -150,20 +155,73 @@
             <div class="amount_age">
                 <p>Basic 18+</p> 
             <div class="counter">
-                <button class="counter_btn">–</button>
-                1
-                <button class="counter_btn">+</button>
+                <button class="counter_btn minus1">–</button>
+                <p class="counter_text1">0</p>
+                <button class="counter_btn plus1">+</button>
             </div>
             <p>Senior 65+ </p>
             <div class="counter">
-                <button class="counter_btn">–</button>
-                1
-                <button class="counter_btn">+</button>
+                <button class="counter_btn minus2">–</button>
+                <p class="counter_text2">0</p>
+                <button class="counter_btn plus2">+</button>
             </div>
         </div><br>
-            <b>Total €220</b><br>
+            <!-- <b>Total € <span class="total">0</span></b><br> -->
             <button class="buy_btn">Buy Now</button>
         </div>
+    </div>
+    <div class="booking">
+        <h2>booking tickets</h2>
+        <button class="close">&times;</button>
+        <div class="booking_left">
+            
+            <b>Tour to Louvre</b>
+            <hr>
+            <input class="calendar" type="date" id="start" name="trip-start">
+           <!-- <input type="time" id="appt" name="appt" required> -->
+           <select class="time" name="" id="">
+           </select>
+           <input type="text" placeholder="Name">
+           <input type="email" id="email" placeholder="Email" size="30" required>
+           <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+           <select class="ex-type">
+            <option class="ex-opt">Permanent Exhibition</option>
+            <option class="ex-opt">Temporary Exhibition</option>
+            <option class="ex-opt">Combined Admission</option>
+          </select>
+          
+          <div class="amount_age">
+            <p>Basic 18+</p> 
+        <div class="counter">
+            <button class="counter_btn minus1">–</button>
+            <p class="counter_text1">0</p>
+            <button class="counter_btn plus1">+</button>
+        </div>
+        <p>Senior 65+ </p>
+        <div class="counter">
+            <button class="counter_btn minus2">–</button>
+            <p class="counter_text2">0</p>
+            <button class="counter_btn plus2">+</button>
+        </div>
+        
+        </div>
+       
+</div>
+<div class="booking_right">
+    <h3>Overview</h3>
+    <b>Tour to Louvre</b>
+    <p class="booking_date">date</p>
+    <p class="booking_time">time</p>
+    <p class="exType">exhibition type</p>
+    <!-- <span class="b-quant">2</span>
+    Basic (<span class="b-price">20</span>€)
+    <spnan class="b-cost">40</spnan>€ <br>
+    <span class="s-quant">2</span>
+    Senior (<span class="s-price">10</span>€)
+    <spnan class="s-cost">20</spnan>€ -->
+    <hr>
+<b>Total:</b> <span class="total">0</span>€
+</div>
     </div>
     <img src="img/parallax 1.png" class="full" alt="">
     <div class="contacts">
@@ -209,6 +267,7 @@
                 <p> Username</p>
             </div>
     </footer>
-    
+    <script src="index.js"></script>
 </body>
+
 </html>

@@ -13,7 +13,7 @@
             .logo {
                 display: flex;
                 font-size: 28px;
-                img {
+                .sq {
                     height: 29px;
                     margin-right: 25px;
                 }
@@ -385,4 +385,9 @@
             }
         
             }
+            .booking {
+                top: 620%;
+            }
     }
+
+  

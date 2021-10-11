@@ -43,6 +43,9 @@
     line-height: 26px;
     list-style: none;
   }
+  header .buger-menu {
+    display: none;
+  }
   .welcome {
     padding-left: 10%;
     padding-right: 8%;
@@ -107,7 +110,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .welcome .btn .nav .square img {
+  .welcome .btn .nav .square .sq {
     width: 14px;
     height: 14px;
     margin: 15px;
@@ -485,6 +488,9 @@
     font-size: 22px;
     line-height: 22px;
     font-weight: 200;
+  }
+  .booking {
+    top: 700%;
   }
 }
 /*# sourceMappingURL=1920px.css.map */

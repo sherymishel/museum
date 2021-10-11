@@ -6,7 +6,93 @@
 @import "1920px.scss";
 @import "400-700.scss";
 
+.counter {
+  margin-bottom: 10px;
+  border: 3px black solid;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 150px;
+  &_btn {
+     background-color: white;
+     font-size: 22px;
+     padding: 10px;
+     color: black;
+     padding: 0;
+  }
+}
+
+.sq-big {
+  border: 5px solid pink;
+  width: 20px;
+}
+
+.ul-cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.747);
+    width: 80%;
+    padding-top: 900px;
+    padding-bottom: 300px;
+    padding-left: 40px;
+    li {
+        line-height: 50px;
+    }
+}
 
 
+video {
+  position: relative;
+}
 
+.play {
+  background-color: rgba(0, 0, 0, 0.103);
+  color: white;
+  border: none;
+  // &:hover {
+  //   background-color: rgba(0, 0, 0, 0);
+  //   color: rgba(0, 0, 0, 0);
+  // }
+}
+// .burger-menu {
+//     display: flex;
+//     flex-direction: column;
+//     img {
+//         display: block;
+//     }
+// }
 
+.booking {
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  line-height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-areas: 
+  'h2 close'
+  'left right';
+  padding: 5% 5%;
+  justify-content: space-between;
+  .close {
+    grid-area: close;
+    font-size: 70px;
+    border: none;
+    background-color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h2 {
+    grid-area: h2;
+    line-height: 70px;
+  }
+  &_left {
+    grid-area: left;
+    margin-right: 5%;
+  }
+  &_right {
+    grid-area: right;
+  }
+  
+}

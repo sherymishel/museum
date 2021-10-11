@@ -1,5 +1,6 @@
 @media screen and (min-width: 1500px) {
     
+    
     h2 {
         font-size: 80px;
     }
@@ -31,7 +32,9 @@
                 list-style: none;
             }
         }
-    
+        .buger-menu {
+            display: none;
+        }
     }
     
     .welcome {
@@ -92,7 +95,7 @@
                 .square {
                     display: flex;
                     justify-content: space-between;
-                    img {
+                    .sq {
                     width: 14px;
                     height: 14px;
                     margin: 15px
@@ -413,5 +416,9 @@
         }
     
         }
-       
+        .booking {
+            top: 700%;
+        }
     }
+
+    
